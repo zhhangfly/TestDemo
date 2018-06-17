@@ -1,0 +1,40 @@
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.zb.testdemo.FirstPage.PlayPartFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+    <!--添加AppBarLayout使得上滑时recycView和轮播图进行联动-->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/TurningPage"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            app:canLoop="true"
+            app:layout_scrollFlags="scroll|enterAlways|snap"/>
+
+    </android.support.design.widget.AppBarLayout>
+    <!--   app:canLoop="true"  //控制循环与否-->
+    <!--SwipeRefreshLayout实现下拉刷新供能-->
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/first_page_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+    </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</android.support.design.widget.CoordinatorLayout>

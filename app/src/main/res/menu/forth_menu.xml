@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@mipmap/ic_step"
+            android:id="@+id/myStep"
+            android:title="我的足迹"
+            />
+        <item
+            android:icon="@mipmap/ic_myfavoriate"
+            android:id="@+id/myFavoriate"
+            android:title="我的收藏"
+            />
+        <item
+            android:icon="@mipmap/ic_mysend"
+            android:id="@+id/mySend"
+            android:title="我的发布"
+            />
+        <item
+            android:icon="@mipmap/ic_self"
+            android:id="@+id/self"
+            android:title="我的信息"/>
+        <item
+            android:icon="@mipmap/ic_set"
+            android:id="@+id/set"
+            android:title="  设置"/>
+
+
+
+    </group>
+
+</menu>
